@@ -60,19 +60,65 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="mb-[120px]">
         <!-- Your Favourite Food section starts here -->
-        <section>
-            <h3></h3>
-            <div></div>
-            <button></button>
+        <section class="w-11/12 mx-auto flex flex-col items-center">
+            <h3 class="text-4xl font-semibold text-center text-font_tertiary mb-[50px]">Your Favourite Food</h3>
+            <button class="join py-5" onclick="loadPrevious()"><img class="btn btn-warning" src="https://img.icons8.com/?size=100&id=87017&format=png&color=000000" alt=""></button>
+              <!-- card section start here  -->
+              <div id="card-container" class="grid lg:grid-cols-2 gap-5"></div>
+              <div id="card-parent" class="grid lg:grid-cols-4 md:grid-cols-2 gap-5">
+              </div>           
         </section>
-
     </main>
-    <footer>
+    <footer class="bg-secondary py-[120px]">
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 w-11/12 mx-auto gap-8 lg:gap-0">
+        <div>
+          <h5 class="mb-[30px] text-font_primary text-[25px] font-bold">Section</h5>
+          <ul class="text-font_primary text-xl font-medium font-poppins flex flex-col gap-6">
+            <li><a href="">Home</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">FAQs</a></li>
+            <li><a href="">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="mb-[30px] text-font_primary text-[25px] font-bold">Section</h5>
+          <ul class="text-font_primary text-xl font-medium font-poppins flex flex-col gap-6">
+            <li><a href="">UI/UX Design</a></li>
+            <li><a href="">Product Design</a></li>
+            <li><a href="">Back End Developer</a></li>
+            <li><a href="">Front End Developer</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="mb-[30px] text-font_primary text-[25px] font-bold">Resource</h5>
+          <ul class="text-font_primary text-xl font-medium font-poppins flex flex-col gap-6">
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="md:col-span-3 lg:col-span-2 ">
+          <h5 class="mb-[30px] text-font_primary text-[25px] font-bold">Subscribe to our Newsletter</h5>
+          <p class="text-lg text-font_secondary font-normal mb-5">Stay in the loop with Tasty Hub! Subscribe to our newsletter for the latest recipes, food tips, and exclusive offers. Simply enter your email and hit subscribe to join our flavorful journey.</p>
+          <div class="flex gap-4">
+            <input class="input input-bordered w-full" type="email" name="" id="" placeholder="Email address">
+            <button class="btn font-poppins text-font_tertiary font-bold text-xl bg-primary rounded-lg px-7 border-none">Subscribe</button>
+          </div>
+        </div>
 
+      </div>
     </footer>
     
+    <!-- modal -->
+    <!-- Open the modal using ID.showModal() method -->
+    <dialog id="foodModal" class="modal">
+      <div id="modal-box" class="modal-box md:w-10/12 md:max-w-2xl bg-amber-50">
+      </div>
+    </dialog>
 
     <script src="JS/main.js"></script>
 </body>
