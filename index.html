@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Tasty Hub – Your Destination for Delicious Discoveries!</title>
+
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Poppins Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/2dafb1f483.js" crossorigin="anonymous"></script>
+
+    <!-- Tailwind + DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: 'rgb(255, 193, 7)',
+                secondary: 'rgba(255, 193, 7, 0.05)',
+                tertiary: 'rgb(220, 53, 69)',
+                font_primary: 'rgb(64, 63, 63)',
+                font_secondary: 'rgb(112, 111, 111)',
+                font_tertiary: 'rgb(16, 15, 15)'
+              },
+              fontFamily: {
+                poppins: 'Poppins'
+              },
+              backgroundImage: {
+                    banner: "linear-gradient(rgba(16, 15, 15, 0.7), rgba(16, 15, 15, 0.7)), url('./images/banner_1.png')"
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="container mx-auto font-poppins">
+    <header>
+        <nav class="w-11/12 mx-auto flex justify-between items-center my-7">
+            <img src="images/Tasty_HUT.png" alt="">
+            <button class="btn font-poppins text-font_tertiary font-bold text-xl bg-primary rounded-lg px-9 border-none">Sign Up</button>
+        </nav>
+        <div class="bg-banner py-[155px] bg-cover mb-[120px]">
+            <div class="md:w-9/12 w-11/12 mx-auto">
+                <h1 class="text-center text-white text-[65px] mb-6 font-bold">Taste Our Delicious <br>Best Foods</h1>
+                <p class="text-center text-white text-lg mb-8 font-normal">Welcome to Tasty Hub, where culinary excellence meets convenience! Whether you're searching for mouthwatering <br>dishes or craving the best flavors from around the world, our platform has it all. Use the search bar to explore a variety of <br>delectable recipes, food ideas, and much more. Let your taste buds embark on a delicious journey with us!</p>
+                <label class="input flex items-center gap-2 pr-0 rounded-lg md:w-10/12 md:mx-auto">
+                    <input type="text" class="grow" placeholder="Search any food"/>
+                    <button class="btn font-poppins text-font_tertiary font-bold text-xl bg-primary rounded-lg px-9 border-none">Search</button>
+                </label>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Your Favourite Food section starts here -->
+        <section>
+            <h3></h3>
+            <div></div>
+            <button></button>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+    
+
+    <script src="JS/main.js"></script>
+</body>
+</html>
